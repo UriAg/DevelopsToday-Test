@@ -1,3 +1,4 @@
+//Template for  throwing a custom errors - Not used
 export default class CustomError {
   static createError({ name, cause, code }) {
     let error = Error(cause);

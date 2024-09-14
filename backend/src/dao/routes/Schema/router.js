@@ -1,5 +1,6 @@
 import { Router } from "express";
 
+//Endpoint router template for keep order and mantain scalable
 export class MyRouter {
   constructor() {
     this.router = Router();

@@ -9,6 +9,7 @@ import CustomCountriesRouter from "./dao/routes/customCities.js";
 
 const app = express();
 
+//Enable cors for everyone
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
@@ -29,6 +30,7 @@ app.use("*", (req, res) => {
   return res.status(404).json({ payload: "Bad request, 404 url not found" });
 });
 
+//HandleErrors middleware listening
 app.use(handleErrors);
 
 app.listen(config.PORT, async () => {

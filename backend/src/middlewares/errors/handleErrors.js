@@ -1,4 +1,6 @@
 import { errorTypes } from "../../services/errors/enums.js";
+
+//Error handler, takes an error code and throws the correct exception
 export default (error, req, res, next) => {
   switch (error.code) {
     case errorTypes.AUTHENTICATION_ERROR:
