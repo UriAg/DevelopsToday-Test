@@ -8,10 +8,6 @@ import {
   YAxis,
 } from "recharts";
 
-// const CustomYAxis = ({ tickCount = 5, dataKey = "", ...props }) => {
-//   return <YAxis tickCount={tickCount} dataKey={dataKey} {...props} />;
-// };
-
 //This component renders a graphic that describes the population over years
 const CountryPopulationChart = ({ populationData }) => {
   return (
